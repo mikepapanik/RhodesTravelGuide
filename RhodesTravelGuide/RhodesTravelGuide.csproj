@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F4C4460-1CE9-4511-9D5C-7C2EEC504570}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RhodesTravelGuide</RootNamespace>
+    <AssemblyName>RhodesTravelGuide</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activitie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activitie.Designer.cs">
+      <DependentUpon>Activitie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="beach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="beach.Designer.cs">
+      <DependentUpon>beach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Callendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Callendar.Designer.cs">
+      <DependentUpon>Callendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="destinations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="destinations.Designer.cs">
+      <DependentUpon>destinations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="event.cs" />
+    <Compile Include="HistOfRhodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistOfRhodes.Designer.cs">
+      <DependentUpon>HistOfRhodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotel.Designer.cs">
+      <DependentUpon>Hotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="res.cs" />
+    <Compile Include="Resethist.cs" />
+    <Compile Include="Map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map.Designer.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVisitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVisitor.Designer.cs">
+      <DependentUpon>FormVisitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MailForm.Designer.cs">
+      <DependentUpon>MailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant.Designer.cs">
+      <DependentUpon>Restaurant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Savee.cs" />
+    <Compile Include="sendmail.cs" />
+    <Compile Include="StartScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartScreen.Designer.cs">
+      <DependentUpon>StartScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpTravel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpTravel.Designer.cs">
+      <DependentUpon>HelpTravel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternetPage.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Activitie.resx">
+      <DependentUpon>Activitie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="beach.resx">
+      <DependentUpon>beach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Callendar.resx">
+      <DependentUpon>Callendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="destinations.resx">
+      <DependentUpon>destinations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVisitor.resx">
+      <DependentUpon>FormVisitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistOfRhodes.resx">
+      <DependentUpon>HistOfRhodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotel.resx">
+      <DependentUpon>Hotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MailForm.resx">
+      <DependentUpon>MailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map.resx">
+      <DependentUpon>Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant.resx">
+      <DependentUpon>Restaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartScreen.resx">
+      <DependentUpon>StartScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpTravel.resx">
+      <DependentUpon>HelpTravel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elli-beach-rhodes-greece-aerial-motion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lindos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oldtown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prasonisi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rhode.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rodos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tourist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sound off.ico" />
+    <Content Include="sound on.ico" />
+    <Content Include="syrtakigreek.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
